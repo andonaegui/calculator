@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Calculadora</string>
+    <string name="title">Calculadora Lobito</string>
+    <string name="number_placeholder"><![CDATA[%1 $s<]]></string>
+</resources>
