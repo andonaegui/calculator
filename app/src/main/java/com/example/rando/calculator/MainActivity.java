@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     private Button equals;
     private Context appCtx;
     private String operator;
-
+    private String factor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,11 +33,9 @@ public class MainActivity extends AppCompatActivity {
         startEvents();
     }
 
-
-
     private void startComponents() {
         appCtx = getApplicationContext();
-        one = (Button) findViewById(R.id.one);
+        one =   (Button) findViewById(R.id.one);
         two = (Button) findViewById(R.id.two);
         three = (Button) findViewById(R.id.three);
         four= (Button) findViewById(R.id.four);
@@ -66,16 +64,95 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        equals.setOnClickListener(new View.OnClickListener() {
+        /*equals.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 resolve();
             }
+        });*/
+
+        one.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
         });
-    }
 
+        two.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
 
-    private void resolve() {
+            }
+        });
 
+        three.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+
+        four.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+
+        five.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+
+        six.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+
+        seven.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+
+        eight.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+
+        nine.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+
+        plus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+
+        minus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+
+        equals.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
     }
 }
