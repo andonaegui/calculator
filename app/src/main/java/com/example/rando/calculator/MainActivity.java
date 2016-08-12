@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -23,6 +24,8 @@ public class MainActivity extends AppCompatActivity {
     private Context appCtx;
     private String operator;
     private String factor;
+    private TextView result;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +50,13 @@ public class MainActivity extends AppCompatActivity {
         plus= (Button) findViewById(R.id.plus);
         minus= (Button) findViewById(R.id.minus);
         equals= (Button) findViewById(R.id.equals);
+        result= (TextView) findViewById(R.id.result);
+    }
+
+    private void refreshScreen(){
+        result.setText(factor);
+
+
     }
 
     private void startEvents() {
@@ -74,63 +84,72 @@ public class MainActivity extends AppCompatActivity {
         one.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                factor += "1"; //factor = factor +1
+                refreshScreen();
             }
         });
 
         two.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                factor += "2"; //factor = factor +1
+                refreshScreen();
             }
         });
 
         three.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                factor += "3"; //factor = factor +1
+                refreshScreen();
             }
         });
 
         four.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                factor += "4"; //factor = factor +1
+                refreshScreen();
             }
         });
 
         five.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                factor += "5"; //factor = factor +1
+                refreshScreen();
             }
         });
 
         six.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                factor += "6"; //factor = factor +1
+                refreshScreen();
             }
         });
 
         seven.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                factor += "7"; //factor = factor +1
+                refreshScreen();
             }
         });
 
         eight.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                factor += "8"; //factor = factor +1
+                refreshScreen();
             }
         });
 
         nine.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                factor += "9"; //factor = factor +1
+                refreshScreen();
             }
         });
 
